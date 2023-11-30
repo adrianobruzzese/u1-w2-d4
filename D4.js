@@ -3,9 +3,8 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function area(l1, l2) {
-  totalArea = l1 * l2;
-  return totalArea;
+const area = function(l1, l2) {
+  return l1 * l2
 }
 
 console.log(area(4, 4));
@@ -18,7 +17,7 @@ console.log(area(4, 4));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function crazySum(n1, n2) {
+const crazySum = function(n1, n2) {
   if (n1 === n2) {
     sum = n1 * 3 + n2 * 3;
   } else {
@@ -36,7 +35,7 @@ console.log(crazySum(2, 2));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function crazyDiff(n1, n2 = 19) {
+const crazyDiff = function(n1, n2 = 19) {
   if (n1 > n2) {
     diff = (n1 - n2) * 3;
   } else {
@@ -48,14 +47,13 @@ function crazyDiff(n1, n2 = 19) {
 console.log(crazyDiff(22));
 
 /* ESERCIZIO 4
- Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
- se n è uguale a 400.
+ Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure se n è uguale a 400.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function boundary(n) {
-  if ((n % 1 != 0 && n >= 20 && n <= 100) || (n % 1 != 0 && n === 400)) {
+const boundary = function(n) {
+  if ((n % 1 === 0 && n >= 20 && n <= 100) || n % 1 === 0 && n === 400) {
     return true;
   } else {
     return false;
