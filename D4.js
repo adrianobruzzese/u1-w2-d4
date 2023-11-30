@@ -70,7 +70,7 @@ console.log(boundary(400));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function epify(stringa) {
+const epify = function(stringa) {
   if (stringa.startsWith('EPICODE')) {
     return stringa;
   } else {
@@ -86,7 +86,7 @@ console.log(epify('BOOLEAN è una scuola di coding'));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function check3and7(n) {
+const check3and7 = function(n) {
   if (n % 3 === 0 && n % 7 === 0) {
     return true;
   } else {
@@ -99,7 +99,7 @@ console.log(check3and7(20));
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
-function reverseString(str) {
+const reverseString = function(str) {
   splitString = str.split('');
   reverseArray = splitString.reverse();
   joinArray = reverseArray.join('');
@@ -123,7 +123,7 @@ console.log(reverseString('Ciao belli!'));
  della stringa originale.
 */
 
-function cutString(str){
+const cutString = function(str){
     return str.slice(1, str.length-1)
 }
 
